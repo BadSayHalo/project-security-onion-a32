@@ -1,0 +1,22 @@
+name: Experiment / Test case
+description: Đề xuất hoặc ghi nhận kịch bản thực nghiệm
+labels: [experiment]
+body:
+  - type: input
+    id: test
+    attributes:
+      label: Test ID
+      placeholder: TC-01
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Mục tiêu, thiết bị và phạm vi được phép
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Dữ liệu cần thu thập / kết quả
+      description: Không đăng log/PCAP có thông tin bí mật.

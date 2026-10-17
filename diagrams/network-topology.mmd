@@ -1,0 +1,10 @@
+flowchart TB
+  H["Windows Host 24 GB RAM / 8 logical CPUs<br/>VirtualBox"]
+  S["Security Onion EVAL<br/>12 GB / 4 vCPU<br/>NIC1 NAT Management, NIC2 Monitor (no IP)"]
+  N{{"Internal Network: lab-ids<br/>Promiscuous monitor / verify with tcpdump"}}
+  K["Kali 3 GB / 2 vCPU<br/>192.168.100.10"]
+  U["Ubuntu 2 GB / 1 vCPU<br/>192.168.100.20"]
+  H -. "HTTPS NAT forwarding" .-> S
+  S -. "Passive sniffing" .-> N
+  K <-->|Lab traffic| N
+  U <-->|Lab traffic| N

@@ -1,0 +1,61 @@
+# Credentials and local user configs
+.env
+.env.*
+!.env.example
+!*.example.env
+**/config.local.ps1
+**/config.local.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+*credentials*
+*secret*.json
+**/authorized_keys
+**/known_hosts
+
+# VM images, installers and large archives
+*.iso
+*.ova
+*.ovf
+*.vdi
+*.vmdk
+*.qcow2
+*.vhd
+*.vhdx
+*.vbox
+*.vbox-prev
+*.vbox-tmp
+*.7z
+*.rar
+
+# Network captures, raw endpoint logs, dumps
+*.pcap
+*.pcapng
+*.cap
+*.evtx
+*.etl
+*.dmp
+*.dump
+*.core
+*.har
+*.log
+*.log.*
+
+# Private evidence by default
+/evidence/private/
+/evidence/screenshots/
+/evidence/raw/
+
+# Temp and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.tmp
+*.swp

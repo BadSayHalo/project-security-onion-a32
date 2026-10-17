@@ -1,0 +1,8 @@
+flowchart LR
+  M[Mirrored / sniffed traffic] --> Z[Zeek metadata]
+  M --> S[Suricata alerts + PCAP]
+  Z --> A[Local Elastic Agent]
+  S --> A
+  A --> E[Elasticsearch ingest/storage]
+  E --> C[SOC: Alerts / Hunt / Dashboards / Cases]
+  S -. "PCAP on disk" .-> P[SOC PCAP view]

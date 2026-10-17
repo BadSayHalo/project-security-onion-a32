@@ -1,0 +1,6 @@
+test_id,datetime_iso8601,timezone,source_ip,destination_ip,tool_or_action,expected,observed_metadata,observed_alert,signature_id,pcap_available,verdict,evidence_ref,notes
+TC-01,,,,,,,NOT_RUN,NOT_RUN,,NOT_RUN,NOT_RUN,,
+TC-02,,,,,,,NOT_RUN,NOT_RUN,,NOT_RUN,NOT_RUN,,
+TC-03,,,,,,,NOT_RUN,NOT_RUN,,NOT_RUN,NOT_RUN,,
+TC-04,,,,,,,NOT_RUN,NOT_RUN,,NOT_RUN,NOT_RUN,,
+TC-05,,,,,,,NOT_RUN,NOT_RUN,,NOT_RUN,NOT_RUN,,
